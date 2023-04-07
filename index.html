@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/normalize.css">
 
-	<title>YiwiseAI</title>
+	<title>Yiwise Labs</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -27,29 +27,31 @@
 	<div class="text-center">
 	<h1>多模态内容生成技术</h1>
 		<br>
-<p class='fst-italic mb-0'>YiwiseAI</p>
+<p class='fst-italic mb-0'>Yiwise Labs</p>
+
+<p><b>一知智能</b></p>
 <br>
 	</div>
 <p>
-		研发了音频、文本、数字人(视频)等多模态内容生成技术。包括：</p>
+		研发了音频、文本、数字人（视频）等多模态内容生成技术。包括：</p>
 		<ul>
 			<li><b>百变音色</b><br>
-			可以将任意人音色的音频转换成"成千上万"不同音色的音频。</li>
+			可以将任意人音色的音频转换成“成千上万”不同音色的音频。</li>
 
-			<li><b>音色转换(柯南蝴蝶结)</b><br>
+			<li><b>音色转换（柯南蝴蝶结）</b><br>
 					可以将任意人音色的音频转换成指定人音色的音频。
 			</li>
 			
-			<li><b>基于大语言模型的text2sql</b><br>
-				输入数据库的schema 和 查询问题，直接生成可执行的SQL语句。
+			<li><b>基于大语言模型的 text2sql</b><br>
+				输入数据库的 schema 和查询问题，直接生成可执行的 SQL 语句。
 			</li>
 
-			<li><b>2D数字人视频合成</b><br>
-				音频驱动的2D数字人视频合成，通过音频可以驱动数字人口型合成。
+			<li><b>2D 数字人视频合成</b><br>
+				音频驱动的 2D 数字人视频合成，通过音频可以驱动数字人口型合成。
 			</li>
 			
-			<li><b>个性化TTS</b><br>
-				只需提供一段3秒的简短录音音频和你想合成的说话内容，即可快速合成你自己的TTS音频。
+			<li><b>小样本 TTS</b><br>
+				只需提供一段 3 秒的简短录音音频和你想合成的说话内容，即可快速合成你自己的 TTS 音频。
 			</li>
 			
 </ul>
@@ -58,35 +60,37 @@
 		
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">		
 	<h2 id="model-overview" style="text-align: center;">技术概述及场景</h2>
+<br><br><br>
 	<h4 style="text-align: left;">百变音色</h4>
 
 		<p>
-可以将任意人音色的音频转换成"成千上万"不同音色的音频。<br>
-该项技术可以用来批量合成大量相同内容不同音色的音频(或视频)。同时，该项技术也可以去制作大量平行音色转换数据，为音色转换技术提供支持。
+可以将任意人音色的音频转换成“成千上万”不同音色的音频。<br>
+该项技术可以用来批量合成大量相同内容不同音色的音频（或视频）。同时，该项技术也可以去制作大量平行音色转换数据，为音色转换技术提供支持。
 		</p>
+		<br><br>
 
 	<h4 style="text-align: left;">音色转换</h4>
 		<p>
 音色转换技术可以将任意人音色的音频转换成指定人音色的音频。<br>
-我们的技术目前支持多种语种的音频的音色转换，同时支持流式语音转换(延迟800ms)。<br>
+我们的技术目前支持多种语种的音频的音色转换，同时支持流式语音转换(延迟 800ms)。<br>
 可能应用到直播、短视频、影视制作等场景。可以合成特定人音色说不同语言，方言的音频。
 		</p>
-
-		<h4 style="text-align: left;">基于大语言模型的text2sql</h4>
+<br><br>
+		<h4 style="text-align: left;">基于大语言模型的 text2sql</h4>
 		<p>
 基于facebook开源的llama模型。<br>
-我们探索是否可以在特定场景下，低成本训练或微调10B参数级别的模型，从而达到比chatgpt更好的效果。
+我们探索是否可以在特定场景下，低成本训练或微调 10B 参数级别的模型，从而达到比 ChatGPT 更好的效果。
 		</p>
-
-		<h4 style="text-align: left;">2D数字人视频合成</h4>
+<br><br>
+		<h4 style="text-align: left;">2D 数字人视频合成</h4>
 		<p>
-用户上传一段5~10分钟的拍摄视频，即可定制该人物形象的数字人模型。<br>
+用户上传一段 5~10 分钟的拍摄视频，即可定制该人物形象的数字人模型。<br>
 使用该模型可以批量合成大量数字人短视频。
 		</p>
-
-		<h4 style="text-align: left;">个性化TTS</h4>
+<br><br>
+		<h4 style="text-align: left;">小样本TTS</h4>
 		<p>
-我们自己复现了<a href='https://valle-demo.github.io/'>《Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers》</a>该论文在中文场景下的效果，只需上传一段3秒及以上的个人音频片段，即可让该模型快速的合成你想要的特定人tts音色。
+基于 <a href='https://valle-demo.github.io/'>《Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers》</a> 论文，我们在上万小时的中文音频数据上训练了中文小样本 TTS 模型。只需上传一段 3 秒及以上的个人音频片段，即可让该模型快速的合成你想要的特定人 TTS 音色。
 		</p>
 
 </div>
@@ -128,7 +132,7 @@
 	<h2 id="vctk-samples" style="text-align: center;">音色转换的效果</h2>
 	
 		<br>
-<p>可以将任意人音色的音频转换成 指定人音色的音频，同时能支持多种语种的转换。</p>
+<p>可以将任意人音色的音频转换成指定人音色的音频，同时能支持多种语种的转换。</p>
 <br>
 <h4 style="text-align: center;">目标人音色</h4>
 <div class="table-responsive pt-3">
@@ -367,12 +371,28 @@
 		</div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="librispeech-samples" style="text-align: center;">基于大语言模型的text2sql</h2>
+
+<p>
+基于BLOOM预训练大语言模型，训练百亿参数级中文text2sql模型。在中文text2sql场景，达到了ChatGPT同等效果。
+</p>
+
+<video  controls="controls" style="width: 100%;text-align: center">
+  <source src="videos/text2sql.mp4" type="video/mp4">
+</video>
+
+
+</div>
+
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
 	<h2 id="librispeech-samples" style="text-align: center;">2D数字人视频合成的效果</h2>
- <video  controls="controls" style="width: 400px;text-align: center">
+	<div style="width: 400px;text-align: center;margin:0 auto;">
+ <video  controls="controls" style="width: 400px;">
   <source src="videos/video.mp4" type="video/mp4">
 </video>
-<p>2D数字人视频合成的效果</p>
-
+<p class='fst-italic mb-0'>2D数字人视频合成的效果</p>
+</div>
 </div>
 
 
